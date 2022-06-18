@@ -27,8 +27,11 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 
+## Inherit some common GhostOS stuff
+$(call inherit-product, vendor/ghost/build/common.mk)
+
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_starlte
+PRODUCT_NAME := ghost_starlte
 PRODUCT_DEVICE := starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
