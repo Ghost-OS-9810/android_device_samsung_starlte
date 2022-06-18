@@ -30,6 +30,8 @@ TARGET_SCREEN_WIDTH := 1440
 ## Inherit some common GhostOS stuff
 $(call inherit-product, vendor/ghost/build/common.mk)
 
+GHOST_BUILD_VARIANT := OFFICIAL
+
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := ghost_starlte
 PRODUCT_DEVICE := starlte
